@@ -31,11 +31,29 @@ the entire block in the lexer for syntaxes is just:
 }`
 
 doc:
-also here is stuff i forgot to include which thus i kinda screwed up just read this:
-The docs are missing the required wrapping. Every physics/graphics/object/GUI/event-handler/DataStore example in the doc is shown as bare top-level code. In reality, Compiler.compile's structure check only allows Include, Using, VarDecl, Function, Class, StaticClass, Enum at the top level — everything else must be nested inside a public <namespace> <name>[args] # ... end function block, or you get "top-level X must be inside a class, variable, or function". The doc never actually shows this function-declaration syntax at all.
-object doesn't clean up on id reuse. Runtime.objectCreate (unlike createSphere/createMesh, which explicitly destroy-and-replace) never checks for an existing object with the same id — redeclaring object Part[id="probe"] twice silently leaves orphaned duplicate Parts stacking up in Workspace.EngineC_Sim. I actually hit this myself mid-test.
+# EngineC README Fixes
+Tested against the actual compiler/runtime. Found two actual issues.
 
-'
+## 1. Syntax for functions wrappers
+All examples of physics, graphics, `object`, GUI, event handlers and `public DataStore` in the README are presented without the needed `public` function wrapper.
+It will produce the following error:
+
+`EngineC structure error: top-level X must be inside a class, variable, or function`
+
+The compiler allows only `#include`, `using`, `var`, `class`, `static class`, `enum` and `public` (function) declarations at top level. Everything else must go into the following form:
+
+```
+public <Namespace> <name>[args] #
+    ... your code ...
+end
+```
+
+**Fix:** Add a "Functions" section with this syntax, and wrap all existing examples with that syntax.
+
+## 2. `object` does not replace on id reuse
+In contrast to `createSphere` and `createMesh`, `Runtime.objectCreate` does not check for the existence of an object with the same `id` before creating new Part. Double `object Part[id="x"]` declaration leaves a duplicated Part in `Workspace.EngineC_Sim` rather than replace old one.
+
+**Fix:** Add such check to `objectCreate`, like in `createSphere` and `createMesh`.
 # EngineC v0.1
 
 The EngineC watermark is applied to running games and exported assets, not the Studio authoring plugin UI.
