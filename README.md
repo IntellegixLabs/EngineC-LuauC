@@ -38,7 +38,7 @@ The EngineC watermark is applied to running games and exported assets, not the S
 ## Quick start
 Every EngineC source must begin with:
 
-#include EngineC
+`#include EngineC`
 
 Compile source through the EngineC compiler or the Live Parser plugin. EngineC source is stored as raw text in a ModuleScript or StringValue; it is not normal Luau.
 
