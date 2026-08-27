@@ -132,7 +132,7 @@ engine.performance.smooth:: >> true <<
 ```
 Vectors use `::vector::`:
 
-engine.physics.gravityDirection::vector:: >> {0, -1, 0} <<
+`engine.physics.gravityDirection::vector:: >> {0, -1, 0} <<`
 
 ## GUI markup
 ```
