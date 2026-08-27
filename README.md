@@ -12,9 +12,9 @@ you might be better off creating a regular script and importing EngineC dependan
 ## Syntax
 
 In LuauC, you have to first write (only if u are doing this is a regular luau script) `
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
+``local ReplicatedStorage = game:GetService("ReplicatedStorage")``
 
-local EngineC = require(ReplicatedStorage.EngineC)`
+`local EngineC = require(ReplicatedStorage.EngineC)`
 
 ehh it might be very buggy, and with alot of flagging by roblox studio since it does not recognize most of the syntaxes.
 
