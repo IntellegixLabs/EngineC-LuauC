@@ -30,6 +30,11 @@ the entire block in the lexer for syntaxes is just:
 	["static"] = true, ["enum"] = true, ["void"] = true, ["object"] = true,
 }`
 
+doc:
+also here is stuff i forgot to include which thus i kinda screwed up just read this:
+The docs are missing the required wrapping. Every physics/graphics/object/GUI/event-handler/DataStore example in the doc is shown as bare top-level code. In reality, Compiler.compile's structure check only allows Include, Using, VarDecl, Function, Class, StaticClass, Enum at the top level — everything else must be nested inside a public <namespace> <name>[args] # ... end function block, or you get "top-level X must be inside a class, variable, or function". The doc never actually shows this function-declaration syntax at all.
+object doesn't clean up on id reuse. Runtime.objectCreate (unlike createSphere/createMesh, which explicitly destroy-and-replace) never checks for an existing object with the same id — redeclaring object Part[id="probe"] twice silently leaves orphaned duplicate Parts stacking up in Workspace.EngineC_Sim. I actually hit this myself mid-test.
+
 '
 # EngineC v0.1
 
