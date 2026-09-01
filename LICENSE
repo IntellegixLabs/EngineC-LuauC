@@ -1,14 +1,25 @@
-Copyright 2026 Intellegixlabs
+EngineC “Don’t Sell My Engine” License (v1.2)
+© 2026 IntellegixLabs
 
-Commercial use  is not granted, the use of deriratives and redistribution is conditional, under these circumstances:
+EngineC may be used for the creation of awesome things, wacky things, demonic
+things, or productive things. And EngineC may also be used to SELL whatever
+awesome, wacky, demonic, or productive thing you created with EngineC because
+I'm not going to stand in the way of your entrepreneurial spirit, but don't try finding me if something bad happens.
 
-No commercial use is permitted.
-Redistribution of non-commercial cases is granted, no form of exchangement can happen during the redistribution.
-EngineC and LuauC is a trademarked name, its source code is free for redistribution, but must not be for commercial purposes.
-The authors of EngineC and LuauC are not liable for any kind, there is no warranty, this is served as an 'as-is' terms.
+However, EngineC may NOT be:
+- sold,
+- sold after modification,
+- sold as the "premium version" of EngineC,
+- or distributed in a commercial context, either standalone or otherwise.
+you can indeed use it in something, and sell that something, as long as it's purpose isn't to sell enginec.
 
-The terms of deploying EngineC comes to how it is deployed, the use cases of personal experiments are hereby granted, but however any game/place/experience that utilizes EngineC or LuauC MUST give proper credit, and clearly state that the use of EngineC and LuauC.
-All forms of use must give proper credit to the original Authors.
+Proper attribution to "EngineC" and "IntellegixLabs" where EngineC is used is mandatory. Attribution makes me happy. Failure to attribute makes me sad.
 
-The original authors MUST NOT BE LIABLE FOR ANY KIND OF CLAIM, AND PROPER CREDIT MUST BE GIVEN FOR ANY TYPE OF USE, COMMERCIAL USE IS STRICTLY PROHIBITED, ONLY USE FOR PERSONAL PROJECTS, EXEPTION FOR GAMES/PLACES/EXPERIENCES APPLY:
-PROPER CREDIT MUST BE GIVEN, THE DEVELOPERS MUST STATE THE USE OF ENGINEC AND LUAUC, THIS CAN BE USED COMMERCIALLY, AS LONG AS PROPER CREDIT IS GIVEN.
+"EngineC" is a trademark of IntellegixLabs. Your project can "use EngineC",
+but your project CANNOT use "EngineC" as its name, claim to BE EngineC, or
+that EngineC endorses your questionable judgment calls.
+
+Redistribution may only occur in a non-commercial manner and include this
+License. Stripping the humor out of EngineC is prohibited and unethical (quite literally, we might sue if you dont keep it funny).
+
+EngineC is provided "as-is".
