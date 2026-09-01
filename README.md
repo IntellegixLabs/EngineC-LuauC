@@ -200,7 +200,7 @@ using metadistro
 ```
 The server assigns each player a potato, okay, medium, high, or immortal tier and stores the tier and metadata budget on the Player. Roblox does not permit arbitrary client file uploads, so MetaDistro distributes server-owned content tiers instead.
 
-## Live Parser plugin
+## Live Parser plugin (depreciated)
 Export and install ServerStorage.EngineC_LiveParserPlugin as a Studio local plugin. Select an EngineC script, then use:
 
 `liveparse (game.ServerStorage.EngineC_FeatureTest)`
