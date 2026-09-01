@@ -261,6 +261,7 @@ Studio plugins were unreliable, and Roblox Studio kept reporting EngineC syntax 
 - Real-time syntax highlighting and suggestions
 - Automatic compilation to Luau
 - Pre-installed compiler (no extra dependencies needed)
+- USAGE OUTSIDE OF ROBLOX STUDIO YES YES YES YES LETS GOO YES YES YES YES YES YES YES YES YES - README.md writer, IntellegixLabs
 
 ## Changes from Previous Editions
 
