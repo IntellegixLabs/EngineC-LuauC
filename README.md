@@ -280,7 +280,7 @@ i need to take a short break
 - **Dependency system**: `#include` for MainDependancies and AdditionalDependancies
 - **Automatic compiling**: compiles `.ec` to `.lua` upon saving the file
 - Syntax highlighting and code suggestions
-- Automatic formatting: smart insertion of blocks for classes and functions
+- Automatic formatting (WIP, very buggy, only works like 0.0000001% of the time, or just never.): smart insertion of blocks for classes and functions
 
 ## Example Code
 
@@ -291,7 +291,6 @@ local arr = {1, 2, 3}
 local first = arr[-1]
 
 class MyClass
-    // Automatically formatted
 end
 ```
 
