@@ -16,11 +16,13 @@ Homebrew (mac only, i haven't managed to implement Windows support, uhh i will t
 brew install IntellegixLabs/homebrew-enginec/enginec
 ```
 
-## VSCode Extention
+## VSCode Extention (Outsiders' Edition)
 this includes compiler and the colouring thingy, find in [Releases](https://github.com/IntellegixLabs/EngineC-roblox-LuauC/releases) page. (GET THE FIXED VERSION PLEASE)
 the VSCode Extention MAY have stuff differentiating from the Roblox Studio edition.
 
 to install it, go to the vscode extentions tab, go to those 3 dots on the top right side of the tab, then click it, then press "install from VSIX", select the .vsix file and you SHOULD be good to go (hopefully).
+
+go to the bottom to see more about Outsiders' Edition
 
 ## Syntax
 
@@ -221,5 +223,77 @@ Export and install ServerStorage.EngineC_LiveParserPlugin as a Studio local plug
 
 The plugin previews GUI markup, reparses on edits, and packages EngineC plus AdditionalDependencies.
 
-`EngineC v0.1 | powered by EngineC`
-'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Outsiders' Edition 
+wow, you came!
+
+
+## What this even is:
+
+This is a Edition made for VSCode and to work outside of roblox studio, this is primarily so that roblox studio will stop screaming at developers during use, i have indeed resulted to remove the GUI Markup features and sort of started again from scratch, so alot of things may differentiate. i genuinely think the already existing GUI maker in roblox studio is decent enough, i don't really want to recreate React Native but for roblox studio or something like that.
+
+## Why the name:
+
+its outside of roblox studio
+
+
+
+## Why VS Code?
+
+Studio plugins were unreliable, and Roblox Studio kept reporting EngineC syntax errors. In addition, switching to VS Code offers:
+- Distract-free environment
+- Real-time syntax highlighting and suggestions
+- Automatic compilation to Luau
+- Pre-installed compiler (no extra dependencies needed)
+
+## Changes from Previous Editions
+
+This version is all about the core features of the language and drops:
+- GUI markup (native tools are enough in Roblox Studio)
+- Built-in bindings for physics and graphics
+- Live parser plugin
+- Studio plugin
+
+## Features
+
+- **Typed variables**: `int`, `number`, `local`
+- **Arrays**: DreamBerd style indexing `-1`, `0`, `1`
+- **Dependency system**: `#include` for MainDependancies and AdditionalDependancies
+- **Automatic compiling**: compiles `.ec` to `.lua` upon saving the file
+- Syntax highlighting and code suggestions
+- Automatic formatting: smart insertion of blocks for classes and functions
+
+## Example Code
+
+```ec
+#include EngineC
+
+local arr = {1, 2, 3}
+local first = arr[-1]
+
+class MyClass
+    // Automatically formatted
+end
+```
+
+Installation of `.vsix` in VS Code -> Open `.ec` files -> Compile using `Cmd + Alt + C` (for macOS)(does thy shortcut work? Yesn't).
+
+## Dependencies
+
+Additional Lua modules should be added to `AdditionalDependancies/` and included with `#include` and `using`.
