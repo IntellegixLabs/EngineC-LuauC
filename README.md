@@ -270,6 +270,9 @@ This version is all about the core features of the language and drops:
 - Live parser plugin
 - Studio plugin
 
+yes, i will try to re-implement physics and graphics with a new library and dependancy(s)
+i need to take a short break
+
 ## Features
 
 - **Typed variables**: `int`, `number`, `local`
