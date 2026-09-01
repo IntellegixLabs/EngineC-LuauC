@@ -1,4 +1,5 @@
 ## EngineC (LuauC)
+part of IT26 program
 this is in alpha open testing expect bugs please, also go to the issues page to report issues this is very much appreciated
 
 EngineC (or LuauC, devs call it EngineC but the scripting language is LuauC) is a superset of Luau, with the scripting being semi-compiled, with functions being compiled into Luau, and stored into ApplicationSupport.
@@ -18,6 +19,8 @@ brew install IntellegixLabs/homebrew-enginec/enginec
 ## VSCode Extention
 this includes compiler and the colouring thingy, find in [Releases](https://github.com/IntellegixLabs/EngineC-roblox-LuauC/releases) page. (GET THE FIXED VERSION PLEASE)
 the VSCode Extention MAY have stuff differentiating from the Roblox Studio edition.
+
+to install it, go to the vscode extentions tab, go to those 3 dots on the top right side of the tab, then click it, then press "install from VSIX", select the .vsix file and you SHOULD be good to go (hopefully).
 
 ## Syntax
 
