@@ -9,13 +9,15 @@ First, download the .rbxm file from the releases page, and insert it into roblox
 Then find the EngineC_StudioPlugin file, and save as a local plugin (this one is extremely buggy and I can't figure out how to fix it). Open up the plugin and you will find a script editor, once again, this is extremely experimental and buggy.
 you might be better off creating a regular script and importing EngineC dependancies.
 
-## CLI
+## CLI DEPRECIATED BTW!!!!!!!!!
 Homebrew (mac only, i haven't managed to implement Windows support, uhh i will try to later on.)
 ```
 brew install IntellegixLabs/homebrew-enginec/enginec
 ```
 
-
+## VSCode Extention
+this includes compiler and the colouring thingy, find in [Releases](https://github.com/IntellegixLabs/EngineC-roblox-LuauC/releases) page. (GET THE FIXED VERSION PLEASE)
+the VSCode Extention MAY have stuff differentiating from the Roblox Studio edition.
 
 ## Syntax
 
