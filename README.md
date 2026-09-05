@@ -1,5 +1,7 @@
 writted by a kid who likes to sidequest and got bored
 
+both a custom language and a framework for luau
+
 ## EngineC (LuauC)
 part of IT26 program
 this is in alpha open testing expect bugs please, also go to the issues page to report issues this is very much appreciated
